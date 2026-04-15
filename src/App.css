@@ -6,6 +6,14 @@ body {
   background: #f8f7fb;
 }
 
+input, button, textarea {
+  font-family: inherit;
+}
+
+input {
+  font-size: 1rem;
+}
+
 /* Container */
 .container {
   max-width: 420px;
@@ -46,22 +54,62 @@ body {
 
 .inputGroup input {
   flex: 1;
-  padding: 12px;
+  padding: 12px 14px;
+
   border-radius: 12px;
-  border: none;
+  border: 2px solid transparent;
+
   outline: none;
+
   background: #fff;
+
+  font-size: 1rem;
+  color: #1f2937;
+
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+
+  transition: all 0.25s ease;
+}
+
+.inputGroup input:focus {
+  border-color: #a591e1;
+
+  box-shadow:
+    0 5px 15px rgba(0,0,0,0.08),
+    0 0 0 3px rgba(165, 145, 225, 0.25);
+
+  transform: translateY(-1px);
+}
+
+.inputGroup input::placeholder {
+  color: #9ca3af;
+  opacity: 0.8;
 }
 
 .inputGroup button {
   width: 45px;
+
   border: none;
   border-radius: 12px;
+
   background: #a591e1;
   color: white;
+
   font-size: 20px;
   cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.inputGroup button:hover {
+  background: #8b7bd6;
+  transform: translateY(-1px);
+}
+
+/* Click */
+.inputGroup button:active {
+  transform: scale(0.95);
 }
 
 /* Lista */
