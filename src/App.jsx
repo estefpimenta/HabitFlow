@@ -53,9 +53,9 @@ function App() {
 
       <div className='container'>
 
-        <h1 className='title'>Habit Flow</h1>
+        <h1 className='title'>🌱 Habit Flow</h1>
 
-        <p className='progress'> {concluidos} de {habitos.length} hábitos concluídos</p>
+        <p className='progress'> <span className='spanConcluidos'>{concluidos}</span> de <span className='spanTotal'>{habitos.length}</span> hábitos concluídos</p>
 
         {/* Input */}
         <div className="inputGroup">

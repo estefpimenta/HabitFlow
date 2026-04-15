@@ -16,7 +16,13 @@ body {
 /* Title */
 .title {
   text-align: center;
-  color: #6b5cff;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #a591e1; /* lavanda */
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+
 }
 
 /* Progress */
@@ -24,6 +30,11 @@ body {
   text-align: center;
   color: #666;
   margin-bottom: 20px;
+}
+
+.spanConcluidos, .spanTotal {
+  font-weight: 600;
+  color: #a591e1; /* lavanda */
 }
 
 /* Input */
@@ -47,7 +58,7 @@ body {
   width: 45px;
   border: none;
   border-radius: 12px;
-  background: #6b5cff;
+  background: #a591e1;
   color: white;
   font-size: 20px;
   cursor: pointer;
@@ -107,4 +118,10 @@ body {
   background: transparent;
   cursor: pointer;
   font-size: 16px;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
