@@ -53,10 +53,11 @@ function App() {
 
       <div className='container'>
 
-        <h1>Habit Flow</h1>
+        <h1 className='title'>Habit Flow</h1>
 
-        <p>{concluidos} de {habitos.length} hábitos concluídos</p>
+        <p className='progress'> {concluidos} de {habitos.length} hábitos concluídos</p>
 
+        {/* Input */}
         <div className="inputGroup">
           <input
             type="text"
@@ -66,31 +67,31 @@ function App() {
           />
 
           <button onClick={adicionarHabito}>
-            Adicionar
+            +
           </button>  
         </div>
 
-        <ul>
-          
+
+        {/* Lista de hábitos */}
+        <div className="lista">
           {
             habitos.map(h => (
-              <li key={h.id}>
+              <div className='card' key={h.id}>
                 
                 <input type="checkbox" checked={h.concluido} onChange={() => toggleHabito(h.id)} />
-                <span>{h.nome}</span>
-                <button onClick={ () => removerHabito(h.id)}>Remover ❌</button>
+                <span className={`${h.concluido ? "done" : ""}`}>{h.nome}</span>
+                <button onClick={ () => removerHabito(h.id)}>X</button>
 
-              </li>
+              </div>
             ))
           }
 
 
 
-        </ul>
+        </div>
 
 
-      </div>
-      
+      </div>   
     
   )
 }

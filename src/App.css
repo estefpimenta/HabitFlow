@@ -1,0 +1,110 @@
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f8f7fb;
+}
+
+/* Container */
+.container {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #6b5cff;
+}
+
+/* Progress */
+.progress {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input */
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputGroup input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+.inputGroup button {
+  width: 45px;
+  border: none;
+  border-radius: 12px;
+  background: #6b5cff;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Lista */
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Cards */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+  color: #1f2937; /* cinza escuro */
+  font-weight: 500;
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Cores pastel alternadas */
+.card:nth-child(1) { background: #fda4af; } /* rosa mais vivo */
+.card:nth-child(2) { background: #c4b5fd; } /* lilás mais forte */
+.card:nth-child(3) { background: #6ee7b7; } /* verde menta vivo */
+.card:nth-child(4) { background: #fdba74; } /* laranja suave mais forte */
+
+.card span {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Concluído */
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Botão remover */
+.card button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
