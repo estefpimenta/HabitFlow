@@ -64,6 +64,11 @@ function App() {
             value={novoHabito}
             onChange={(e) => setNovoHabito(e.target.value)}
             placeholder="Digite um novo hábito"
+            onKeyDown={(e) => {
+              if(e.key === "Enter") {
+                adicionarHabito()
+              }
+            }} 
           />
 
           <button onClick={adicionarHabito}>
