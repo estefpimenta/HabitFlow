@@ -6,7 +6,10 @@ import './App.css'
 function App() {
 
   // Hooks
-  const [ habitos, setHabitos  ] = useState([])
+  const [ habitos, setHabitos  ] = useState(() => {
+    const dados = localStorage.getItem("habitos")
+    return dados ? JSON.parse(dados) : []
+  })
   const [ novoHabito, setNovoHabito ] = useState("")
   
   // Função para adicionar um novo hábito
@@ -38,6 +41,13 @@ function App() {
   
   // Contar hábitos concluídos
   const concluidos = habitos.filter(h => h.concluido === true).length
+
+// UseEffect para salvar os hábitos no localStorage sempre que eles mudarem
+  useEffect(() => {
+    localStorage.setItem("habitos", JSON.stringify(habitos))
+  }, [habitos])
+
+
 
   return (
 
