@@ -1,17 +1,56 @@
-# React + Vite
+# HabitFlow — Habit Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web para **gerenciamento e acompanhamento de hábitos diários**.
 
-Currently, two official plugins are available:
+O foco foi desenvolver uma interface **moderna, minimalista e interativa**, aplicando conceitos fundamentais de React como **useState e useEffect**, além de trabalhar **persistência de dados com localStorage** e atenção à experiência do usuário.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src="./src/assets/preview.jpg" alt="Preview do projeto">
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# HabitFlow
+## 🎯 Objetivo do Projeto
+
+Criar uma aplicação simples, para consolidar conceitos essenciais de **React**, incluindo:
+
+- Gerenciamento de estado com `useState`
+- Efeitos colaterais com `useEffect`
+- Persistência de dados com `localStorage`
+- Manipulação de listas (CRUD completo)
+- Microinterações e feedback visual
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React.js (Vite)**
+- **JavaScript (ES6+)**
+- **CSS3**
+  - Flexbox
+  - Responsividade com Media Queries
+  - Animações com CSS
+- **LocalStorage (Web API)**
+
+---
+
+## 📚 Possíveis Melhorias Futuras
+
+- Adicionar animações avançadas (ex: Framer Motion)
+- Implementar sistema de categorias de hábitos
+- Criar progresso semanal/mensal
+- Adicionar dark mode
+- Sincronização com backend (API)
+- Refatorar para TypeScript
+- Melhorar acessibilidade (ARIA, navegação por teclado)
+
+---
+
+## 🔗 Links
+
+- 💻 **Link do projeto**  
+  https://estefpimenta.github.io/habit-flow/
+
+---
