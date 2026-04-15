@@ -4,7 +4,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background: #f8f7fb;
+  -webkit-font-smoothing: antialiased;
 }
+
 
 input, button, textarea {
   font-family: inherit;
@@ -262,4 +264,68 @@ input {
   border-width: 0 2px 2px 0;
 
   transform: rotate(45deg);
+}
+
+
+
+/* media queries */
+/* tablet */
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 600px;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .progress {
+    font-size: 1.1rem;
+  }
+
+  .inputGroup input {
+    padding: 14px;
+    font-size: 1.05rem;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 700px;
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .progress {
+    font-size: 1.2rem;
+  }
+
+  .lista {
+    gap: 16px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .inputGroup input {
+    font-size: 1.1rem;
+  }
+
 }
