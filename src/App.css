@@ -101,10 +101,17 @@ body {
 .card:nth-child(2) { background: #c4b5fd; } /* lilás mais forte */
 .card:nth-child(3) { background: #6ee7b7; } /* verde menta vivo */
 .card:nth-child(4) { background: #fdba74; } /* laranja suave mais forte */
+.card:nth-child(5) { background: #fda4e8; } /* rosa mais vivo */
+.card:nth-child(6) { background: #b5ecfd; } /* lilás mais forte */
+.card:nth-child(7) { background: #e7e76e; } /* verde menta vivo */
+.card:nth-child(8) { background: #fdc274; } /* laranja suave mais forte */
 
 .card span {
   flex: 1;
   margin: 0 10px;
+  display: flex;
+  align-items: center;
+  line-height: 1
 }
 
 /* Concluído */
@@ -130,6 +137,8 @@ body {
   cursor: pointer;
 
   transition: all 0.2s ease;
+
+  line-height: 1;
 }
 
 /* Hover */
@@ -170,6 +179,9 @@ body {
   background: white;
 
   transition: all 0.2s ease;
+
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Quando marcado */
