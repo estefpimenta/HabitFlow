@@ -84,6 +84,7 @@ body {
 
   color: #1f2937; /* cinza escuro */
   font-weight: 500;
+  gap: 12px;
 }
 
 .card {
@@ -114,14 +115,91 @@ body {
 
 /* Botão remover */
 .card button {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 8px;
   border: none;
-  background: transparent;
+
+  background: rgba(0,0,0,0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   cursor: pointer;
-  font-size: 16px;
+
+  transition: all 0.2s ease;
 }
 
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
+/* Hover */
+.card button:hover {
+  background: #ef4444;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Container */
+.checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+/* Esconde o padrão */
+.checkbox input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Caixa custom */
+.checkmark {
+  position: absolute;
+  display: inline-block; 
+  flex-shrink: 0; 
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  border-radius: 6px;
+  border: 2px solid #a591e1;
+
+  background: white;
+
+  transition: all 0.2s ease;
+}
+
+/* Quando marcado */
+.checkbox input:checked + .checkmark {
+  background: #a591e1;
+  border-color: #a591e1;
+}
+
+/* Check (✔) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar check */
+.checkbox input:checked + .checkmark::after {
+  display: block;
+}
+
+/* Estilo do check */
+.checkbox .checkmark::after {
+  left: 6px;
+  top: 2px;
+
+  width: 5px;
+  height: 10px;
+
+  border: solid white;
+  border-width: 0 2px 2px 0;
+
+  transform: rotate(45deg);
 }

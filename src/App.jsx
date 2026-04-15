@@ -78,9 +78,13 @@ function App() {
             habitos.map(h => (
               <div className='card' key={h.id}>
                 
-                <input type="checkbox" checked={h.concluido} onChange={() => toggleHabito(h.id)} />
+                <label className='checkbox'>
+                  <input type="checkbox" checked={h.concluido} onChange={() => toggleHabito(h.id)} />
+                  <span className='checkmark'></span>
+                </label>
+                
                 <span className={`${h.concluido ? "done" : ""}`}>{h.nome}</span>
-                <button onClick={ () => removerHabito(h.id)}>X</button>
+                <button onClick={ () => removerHabito(h.id)}>✕</button>
 
               </div>
             ))
