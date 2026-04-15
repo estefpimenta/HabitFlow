@@ -51,6 +51,6 @@ Criar uma aplicação simples, para consolidar conceitos essenciais de **React**
 ## 🔗 Links
 
 - 💻 **Link do projeto**  
-  https://estefpimenta.github.io/habit-flow/
+  https://estefpimenta.github.io/HabitFlow/
 
 ---
